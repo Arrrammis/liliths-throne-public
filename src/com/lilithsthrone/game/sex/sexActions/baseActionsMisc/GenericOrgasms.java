@@ -1515,6 +1515,12 @@ public class GenericOrgasms {
 									case BUBBLING:
 										cumTargetSB.append(" bubbling, fizzy [npc1.cum] as you possibly can.");
 										break;
+                                                                        case FEMINIZING:
+										cumTargetSB.append(" feminizing [npc1.cum] as you possibly can.");
+										break;
+									case MASCULINIZING:
+										cumTargetSB.append(" masculinizing [npc1.cum] as you possibly can.");
+										break;
 									case HALLUCINOGENIC:
 										cumTargetSB.append(" psychoactive [npc1.cum] as you possibly can.");
 										break;

@@ -242,6 +242,32 @@ public class FluidGirlCum implements FluidInterface, Serializable, XMLSaving {
 								+ "[npc.NamePos] [npc.girlcum] is now [style.boldGrow(bubbly)]!"
 							+ "</p>");
 				}
+                        case FEMINIZING:
+				if(owner.isPlayer()) {
+					return "<p>"
+								+ "You feel a soft coolness spreading up into your [pc.pussy], causing you to let out a gentle sigh.<br/>"
+								+ "Your [pc.girlcum] is [style.boldShrink(no longer feminizing)]!"
+							+ "</p>";
+				} else {
+					return UtilText.parse(owner,
+							"<p>"
+								+ "A soft coolness spreads up into [npc.namePos] [npc.pussy], causing [npc.herHim] to let out a gentle sigh.<br/>"
+								+ "[npc.NamePos] [npc.girlcum] is [style.boldShrink(no longer feminizing)]!"
+							+ "</p>");
+				}
+			case MASCULINIZING:
+				if(owner.isPlayer()) {
+					return "<p>"
+								+ "You feel a soft coolness spreading up into your [pc.pussy], causing you to let out a gentle sigh.<br/>"
+								+ "Your [pc.girlcum] is [style.boldShrink(no longer masculinizing)]!"
+							+ "</p>";
+				} else {
+					return UtilText.parse(owner,
+							"<p>"
+								+ "A soft coolness spreads up into [npc.namePos] [npc.pussy], causing [npc.herHim] to let out a gentle sigh.<br/>"
+								+ "[npc.NamePos] [npc.girlcum] is [style.boldShrink(no longer masculinizing)]!"
+							+ "</p>");
+				}
 			case HALLUCINOGENIC:
 				if(owner.isPlayer()) {
 					return "<p>"

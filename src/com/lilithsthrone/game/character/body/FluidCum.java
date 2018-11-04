@@ -272,6 +272,32 @@ public class FluidCum implements FluidInterface, Serializable, XMLSaving {
 								+ "[npc.NamePos] [npc.cum] is now [style.boldGrow(bubbly)]!"
 							+ "</p>");
 				}
+                        case FEMINIZING:
+				if(owner.isPlayer()) {
+					return "<p>"
+								+ "You feel a warm, radiating heat deep within your [pc.balls], causing you to let out [pc.a_moan+].<br/>"
+								+ "Your [pc.cum] is now [style.boldGrow(feminizing)]!"
+							+ "</p>";
+				} else {
+					return UtilText.parse(owner,
+							"<p>"
+								+ "A warm, radiating heat takes root deep within [npc.namePos] [npc.balls], causing [npc.herHim] to let out [npc.a_moan+].<br/>"
+								+ "[npc.NamePos] [npc.cum] is now [style.boldGrow(feminizing)]!"
+							+ "</p>");
+				}
+			case MASCULINIZING:
+				if(owner.isPlayer()) {
+					return "<p>"
+								+ "You feel a warm, radiating heat deep within your [pc.balls], causing you to let out [pc.a_moan+].<br/>"
+								+ "Your [pc.cum] is now [style.boldGrow(masculinizing)]!"
+							+ "</p>";
+				} else {
+					return UtilText.parse(owner,
+							"<p>"
+								+ "A warm, radiating heat takes root deep within [npc.namePos] [npc.balls], causing [npc.herHim] to let out [npc.a_moan+].<br/>"
+								+ "[npc.NamePos] [npc.cum] is now [style.boldGrow(masculinizing)]!"
+							+ "</p>");
+				}
 			case HALLUCINOGENIC:
 				if(owner.isPlayer()) {
 					return "<p>"

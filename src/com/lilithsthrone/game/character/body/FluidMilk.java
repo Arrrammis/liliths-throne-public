@@ -242,6 +242,32 @@ public class FluidMilk implements FluidInterface, Serializable {
 								+ "[npc.NamePos] [npc.milk] is now [style.boldGrow(bubbly)]!"
 							+ "</p>");
 				}
+                        case FEMINIZING:
+				if(owner.isPlayer()) {
+					return "<p>"
+								+ "You feel a warm, radiating heat spreading up through your [pc.breasts], causing you to let out [pc.a_moan+].<br/>"
+								+ "Your [pc.milk] is now [style.boldGrow(feminizing)]!"
+							+ "</p>";
+				} else {
+					return UtilText.parse(owner,
+							"<p>"
+								+ "A warm, radiating heat spreads up through [npc.namePos] [npc.breasts], causing [npc.herHim] to let out [npc.a_moan+].<br/>"
+								+ "[npc.NamePos] [npc.milk] is now [style.boldGrow(feminizing)]!"
+							+ "</p>");
+				}
+			case MASCULINIZING:
+				if(owner.isPlayer()) {
+					return "<p>"
+								+ "You feel a warm, radiating heat spreading up through your [pc.breasts], causing you to let out [pc.a_moan+].<br/>"
+								+ "Your [pc.milk] is now [style.boldGrow(masculinizing)]!"
+							+ "</p>";
+				} else {
+					return UtilText.parse(owner,
+							"<p>"
+								+ "A warm, radiating heat spreads up through [npc.namePos] [npc.breasts], causing [npc.herHim] to let out [npc.a_moan+].<br/>"
+								+ "[npc.NamePos] [npc.milk] is now [style.boldGrow(masculinizing)]!"
+							+ "</p>");
+				}
 			case HALLUCINOGENIC:
 				if(owner.isPlayer()) {
 					return "<p>"
